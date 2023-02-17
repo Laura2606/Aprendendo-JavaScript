@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js04_while2.htm - condicional while</title>
+<meta http-equiv = "Content-Type" content= "text/html; charset=utf-8">
+<meta charset= "utf-8"/>
+</head>
+<body>
+<script language = "JavaScript">
+<!--
+/* Objetivo: Executar uma sequência de comandos por uma quantidade indeterminada devezes utilizando uma variável controle
+(valor lógico = true, por exemplo) no lugar de contadores delimitadores. O controle pode ser feito através de perguntas na tela, utilizando o método confirm (ok ou cancelar, por exemplo).
+*/
+
+/* Definição das variáveis */
+var js_contador=1;
+var js_resposta=true;
+
+/* Laço de Repetição Condicional - while utilizando controle de limitação pelo usuário */
+while (js_resposta == true){
+	document.write('<p>' + js_contador + '&ordf; Repetição de uma única linha de comando dentro de um laço condicional:');
+	js_contador += 1;
+	js_resposta = window.confirm('Deseja continuar?');
+}
+//-->
+</script>
+</body>
+</html>
